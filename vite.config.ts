@@ -20,6 +20,7 @@ function injectBuiltByScoutPlugin() {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), injectBuiltByScoutPlugin()],
+  base: '/Twitch_Stream_To_YouTube_Website/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
